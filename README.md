@@ -10,4 +10,22 @@ The independent 5,000-reference detector experiment for Table 8 has been recover
 
 Raw historical V7 evaluation tensors were not retained; `V7_SOURCE_DEFINED` are regenerated, not historic exact copies. A12 frozen input tensors and five checkpoints are in the evidence bundle. A13B external measured datasets should be obtained from the original custodians.
 
-**Pre-publication:** release candidate pending the author's software-license selection, third-party data/code redistribution audit, and an actual Zenodo DOI. No DOI is asserted here.
+
+## Software availability and citation
+
+The IC-PRO-S source code, preserved evaluation artifacts,
+statistical analysis scripts, and reproducibility documentation
+are available from the public GitHub repository:
+
+https://github.com/AmiraSamyTalaat/IC_PRO_S_REPRODUCIBILITY
+
+The archived research software is available on Zenodo:
+https://doi.org/10.5281/zenodo.23404660
+
+The repository distinguishes independently reproducible
+analyses from historical experiments whose complete original
+execution records are unavailable. See
+README_REVIEWERS_START_HERE.md for the precise scope.
+
+External datasets remain subject to their original access
+conditions and licenses. See docs/EXTERNAL_DATA_AND_LICENSE.md.
