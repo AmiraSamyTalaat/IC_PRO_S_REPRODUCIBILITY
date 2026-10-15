@@ -29,7 +29,17 @@ No one of the three establishes familywise superiority under the corrected analy
 5. **Original V7 inputs:** Five historical V7 model checkpoints are preserved in the large archive; the exact original V7 test tensors were not saved. `V7_SOURCE_DEFINED` inputs are regenerated and not historically bitwise-identical.
 6. **External measured datasets:** Third-party measured experimental files are linked by citation and accessed from the owners; we do not redistribute them. A13B requires the source workbook at the expected path, with file SHA-256 recorded in documentation.
 7. **A12 baselines:** The controlled PiGDM and MGDUN-style implementations are adaptations, not byte-for-byte copies of other groups' canonical code. Cross-harness latencies must not be compared as identical benchmarks.
-8. **DOI and license:** These are author-approval **release candidates**, not publicly deposited software. Zenodo DOI is not issued, the software license is pending author choice and upstream audit.
+
+8. Repository status and licensing: The public software
+repository and its versioned GitHub release are available.
+The archived release and its DOI are documented in the
+Software availability section.
+
+The release provides auditable evidence for the documented
+experiments, subject to the stated historical reproducibility
+limitations. Third-party materials remain subject to their
+original licenses and redistribution permissions.
+
 
 ## File map
 
