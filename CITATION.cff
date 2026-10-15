@@ -1,5 +1,8 @@
 cff-version: 1.2.0
-message: "Please cite this repository and the associated scientific article. Add the Zenodo DOI once deposited."
+
+message: "Please cite the archived IC-PRO-S software release and the associated scientific article."
+doi: "10.5281/zenodo.23404660"
+
 title: "IC-PRO-S: Operator-Aware Proximal Reconstruction for Cross-Instrument Computational Spectroscopy"
 type: software
 authors:
