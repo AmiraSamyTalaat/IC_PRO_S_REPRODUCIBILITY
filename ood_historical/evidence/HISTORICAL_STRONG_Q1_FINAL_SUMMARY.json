@@ -1,0 +1,680 @@
+{
+  "status": "STRONG_Q1_EXECUTION_COMPLETE",
+  "main_fast_5seed": {
+    "test_rel_l2_mean": 0.3566299796104431,
+    "ood_rel_l2_mean": 0.41529399156570435,
+    "max_gate_bypass_test_abs_change": 0.0001544654369354248,
+    "max_gate_bypass_ood_abs_change": 7.730722427368164e-05,
+    "tikhonov_test": 0.49647483229637146,
+    "tikhonov_ood": 0.5458183288574219,
+    "test_gain_pct": 28.167561291898018,
+    "ood_gain_pct": 23.913513048370525
+  },
+  "controlled_baselines": [
+    {
+      "method": "IC-PRO-S (one family model)",
+      "test_rel_l2": 0.3566299796104431,
+      "ood_rel_l2": 0.41529399156570435,
+      "deployment": "Zero-shot across response matrices / channel counts"
+    },
+    {
+      "method": "Tikhonov",
+      "test_rel_l2": 0.49647483229637146,
+      "ood_rel_l2": 0.5458183288574219,
+      "deployment": "Analytic per response"
+    },
+    {
+      "method": "NNLS-TV",
+      "test_rel_l2": 0.4243356757121502,
+      "ood_rel_l2": 0.42615065999389673,
+      "deployment": "120-iteration optimization"
+    },
+    {
+      "method": "ReSpecNN per-device",
+      "test_rel_l2": 0.3866538926959038,
+      "ood_rel_l2": 0.40618395060300827,
+      "deployment": "Separate ~3.4M model retrained per target response matrix"
+    },
+    {
+      "method": "ReSpecNN shared-by-M",
+      "test_rel_l2": 0.5548969507217407,
+      "ood_rel_l2": 0.6144669651985168,
+      "deployment": "No response input; one model per detector count"
+    },
+    {
+      "method": "Physics-anchor CNN",
+      "test_rel_l2": 0.4116906225681305,
+      "ood_rel_l2": 0.46987414360046387,
+      "deployment": "Tikhonov anchor + CNN; no proximal step"
+    },
+    {
+      "method": "PnP learned-prior proxy",
+      "test_rel_l2": 0.5337185263633728,
+      "ood_rel_l2": 0.5233915448188782,
+      "deployment": "12 learned-denoiser/data-consistency iterations"
+    }
+  ],
+  "clean_prox_ablation": {
+    "matched_seeds": [
+      3,
+      7,
+      11
+    ],
+    "with_prox_mean_test_rel_l2": 0.3552521963914235,
+    "without_prox_mean_test_rel_l2": 0.36595508456230164,
+    "prox_test_relative_gain_pct": 2.9246452972990484,
+    "with_prox_mean_ood_rel_l2": 0.4137846728165944,
+    "without_prox_mean_ood_rel_l2": 0.4175446132818858,
+    "prox_ood_relative_gain_pct": 0.9004883180598068,
+    "with_prox_mean_test_forward_residual": 0.19357292354106903,
+    "without_prox_mean_test_forward_residual": 0.21750537057717642,
+    "prox_forward_residual_reduction_pct": 11.003152231413777
+  },
+  "fixed_vs_learned_eta": {
+    "learned_test_mean": 0.3616650601228078,
+    "fixed_test_mean": 0.36407313744227093,
+    "learned_vs_fixed_test_gain_pct": 0.6614268046197082,
+    "learned_ood_mean": 0.418176809946696,
+    "fixed_ood_mean": 0.41496069232622784,
+    "learned_vs_fixed_ood_gain_pct": -0.7750415111462505
+  },
+  "eta_stress_seed7": {
+    "rows": [
+      {
+        "stress": "noise",
+        "level": 0.0,
+        "method": "fixed_eta_0.5",
+        "rel_l2": 0.2638961970806122,
+        "forward_residual": 0.09391245245933533,
+        "eta_mean": 0.5
+      },
+      {
+        "stress": "noise",
+        "level": 0.0,
+        "method": "learned_eta",
+        "rel_l2": 0.25721561908721924,
+        "forward_residual": 0.09403983503580093,
+        "eta_mean": 0.5413438677787781
+      },
+      {
+        "stress": "noise",
+        "level": 0.005,
+        "method": "fixed_eta_0.5",
+        "rel_l2": 0.3220252990722656,
+        "forward_residual": 0.1420440971851349,
+        "eta_mean": 0.5
+      },
+      {
+        "stress": "noise",
+        "level": 0.005,
+        "method": "learned_eta",
+        "rel_l2": 0.31727105379104614,
+        "forward_residual": 0.13518118858337402,
+        "eta_mean": 0.5484311580657959
+      },
+      {
+        "stress": "noise",
+        "level": 0.01,
+        "method": "fixed_eta_0.5",
+        "rel_l2": 0.3588798940181732,
+        "forward_residual": 0.2016860544681549,
+        "eta_mean": 0.5
+      },
+      {
+        "stress": "noise",
+        "level": 0.01,
+        "method": "learned_eta",
+        "rel_l2": 0.3559172451496124,
+        "forward_residual": 0.19452624022960663,
+        "eta_mean": 0.5539778470993042
+      },
+      {
+        "stress": "noise",
+        "level": 0.02,
+        "method": "fixed_eta_0.5",
+        "rel_l2": 0.43369561433792114,
+        "forward_residual": 0.2884044647216797,
+        "eta_mean": 0.5
+      },
+      {
+        "stress": "noise",
+        "level": 0.02,
+        "method": "learned_eta",
+        "rel_l2": 0.43353572487831116,
+        "forward_residual": 0.28362366557121277,
+        "eta_mean": 0.5564236044883728
+      },
+      {
+        "stress": "noise",
+        "level": 0.05,
+        "method": "fixed_eta_0.5",
+        "rel_l2": 0.5560161471366882,
+        "forward_residual": 0.43995213508605957,
+        "eta_mean": 0.5
+      },
+      {
+        "stress": "noise",
+        "level": 0.05,
+        "method": "learned_eta",
+        "rel_l2": 0.558540940284729,
+        "forward_residual": 0.43817976117134094,
+        "eta_mean": 0.5568923354148865
+      },
+      {
+        "stress": "channel_dropout",
+        "level": 0.5,
+        "method": "fixed_eta_0.5",
+        "rel_l2": 0.4280349016189575,
+        "forward_residual": 0.23583078384399414,
+        "eta_mean": 0.5
+      },
+      {
+        "stress": "channel_dropout",
+        "level": 0.5,
+        "method": "learned_eta",
+        "rel_l2": 0.40968725085258484,
+        "forward_residual": 0.20499271154403687,
+        "eta_mean": 0.6459965109825134
+      }
+    ]
+  },
+  "response_conditioning_3seed": {
+    "full_test_mean": 0.3616650601228078,
+    "anchor_test_mean": 0.3714941740036011,
+    "response_feature_gain_test_pct": 2.6458325779014755,
+    "full_ood_mean": 0.418176809946696,
+    "anchor_ood_mean": 0.4320082366466522,
+    "response_feature_gain_ood_pct": 3.201658099697119
+  },
+  "observability_posthoc_diagnostic": {
+    "note": "Inference-only feature diagnostic; not a retrained causal ablation. Main response-conditioning evidence uses matched 3-seed retraining anchor-only vs full.",
+    "normal_test": {
+      "rel_l2": 0.3445628583431244,
+      "forward_residual": 0.1787450760602951
+    },
+    "zero_observability_test": {
+      "rel_l2": 0.3620317280292511,
+      "forward_residual": 0.18053404986858368
+    },
+    "normal_ood": {
+      "rel_l2": 0.40620720386505127,
+      "forward_residual": 0.2213691920042038
+    },
+    "zero_observability_ood": {
+      "rel_l2": 0.43211817741394043,
+      "forward_residual": 0.2228795289993286
+    }
+  },
+  "instrument_extrapolation": {
+    "interpolation_standard_test": {
+      "model_rel_l2": 0.3310264050960541,
+      "tikhonov_rel_l2": 0.4754756689071655,
+      "gain_pct": 30.379947662353516,
+      "fraction_better": 0.912109375
+    },
+    "moderate_extrapolation_M8_M40": {
+      "model_rel_l2": 0.3497919738292694,
+      "tikhonov_rel_l2": 0.48948028683662415,
+      "gain_pct": 28.538087844848633,
+      "fraction_better": 0.91015625
+    },
+    "severe_structural_extrapolation": {
+      "model_rel_l2": 0.34939810633659363,
+      "tikhonov_rel_l2": 0.4703485369682312,
+      "gain_pct": 25.715065002441406,
+      "fraction_better": 0.884765625
+    },
+    "definition": {
+      "moderate": "detector counts outside training range (8,40) plus wider bandwidth/frequency ranges",
+      "severe": "different response-family generator: smoothed random, triangular, and high-frequency mixed filters"
+    }
+  },
+  "ood_detector_metrics": [
+    {
+      "score": "nearest_manifold",
+      "AUROC": 0.9681890625,
+      "AUPRC": 0.9715369212280033,
+      "FPR95": 0.1825
+    },
+    {
+      "score": "knn_density",
+      "AUROC": 0.9470125,
+      "AUPRC": 0.9542372975634393,
+      "FPR95": 0.30375
+    },
+    {
+      "score": "mahalanobis",
+      "AUROC": 0.8688234375,
+      "AUPRC": 0.8965387977832515,
+      "FPR95": 0.65
+    },
+    {
+      "score": "isolation_forest",
+      "AUROC": 0.8355124999999999,
+      "AUPRC": 0.8652515973925328,
+      "FPR95": 0.69125
+    },
+    {
+      "score": "forward_residual",
+      "AUROC": 0.8067171874999999,
+      "AUPRC": 0.807705820633862,
+      "FPR95": 0.54625
+    }
+  ],
+  "ood_real_risk_coverage_aurc": {
+    "nearest_manifold": 1.2805682840875687,
+    "knn_density": 1.2805682840875687,
+    "mahalanobis": 1.6444589089457442,
+    "isolation_forest": 1.9090807148400613,
+    "forward_residual": 1.346906800792555
+  },
+  "real_device_15pair": {
+    "n_pairs": 15,
+    "includes_620nm": true,
+    "model_rel_l2_mean": 0.7370421290397644,
+    "model_rel_l2_bootstrap95": [
+      0.5596140623092651,
+      0.9153996109962463
+    ],
+    "tikhonov_rel_l2_mean": 0.8591831922531128,
+    "tikhonov_rel_l2_bootstrap95": [
+      0.6854162812232971,
+      1.0404406785964966
+    ],
+    "mean_pairwise_improvement_pct": 16.21804428100586,
+    "fraction_pairs_model_better": 0.8,
+    "pairwise_difference_bootstrap95": [
+      -0.20420865714550018,
+      -0.050606679171323776
+    ],
+    "rows": [
+      {
+        "sample": "2_Spectrum1",
+        "model_rel_l2": 0.9055058360099792,
+        "tikhonov_rel_l2": 0.8625685572624207,
+        "model_sam": 0.9970182776451111,
+        "tikhonov_sam": 0.7358910441398621,
+        "model_better": false
+      },
+      {
+        "sample": "2_Spectrum3",
+        "model_rel_l2": 0.5251777768135071,
+        "tikhonov_rel_l2": 0.6445633769035339,
+        "model_sam": 0.5287433862686157,
+        "tikhonov_sam": 0.6289424300193787,
+        "model_better": true
+      },
+      {
+        "sample": "2_Spectrum4",
+        "model_rel_l2": 0.7852374911308289,
+        "tikhonov_rel_l2": 0.9681001901626587,
+        "model_sam": 0.7722516059875488,
+        "tikhonov_sam": 0.7607957720756531,
+        "model_better": true
+      },
+      {
+        "sample": "2_Spectrum5",
+        "model_rel_l2": 0.36829209327697754,
+        "tikhonov_rel_l2": 0.5613132119178772,
+        "model_sam": 0.35313504934310913,
+        "tikhonov_sam": 0.4761616289615631,
+        "model_better": true
+      },
+      {
+        "sample": "3LED",
+        "model_rel_l2": 0.6448116302490234,
+        "tikhonov_rel_l2": 0.56678307056427,
+        "model_sam": 0.6975962519645691,
+        "tikhonov_sam": 0.5866199135780334,
+        "model_better": false
+      },
+      {
+        "sample": "400nm",
+        "model_rel_l2": 0.9548458456993103,
+        "tikhonov_rel_l2": 1.4984896183013916,
+        "model_sam": 0.5979647040367126,
+        "tikhonov_sam": 0.8222380876541138,
+        "model_better": true
+      },
+      {
+        "sample": "430nm",
+        "model_rel_l2": 0.6556832194328308,
+        "tikhonov_rel_l2": 0.575799822807312,
+        "model_sam": 0.6588664650917053,
+        "tikhonov_sam": 0.5765179991722107,
+        "model_better": false
+      },
+      {
+        "sample": "450nm",
+        "model_rel_l2": 0.21282796561717987,
+        "tikhonov_rel_l2": 0.4908412992954254,
+        "model_sam": 0.2015397548675537,
+        "tikhonov_sam": 0.3889918029308319,
+        "model_better": true
+      },
+      {
+        "sample": "470nm",
+        "model_rel_l2": 0.6195835471153259,
+        "tikhonov_rel_l2": 0.7047377824783325,
+        "model_sam": 0.6465124487876892,
+        "tikhonov_sam": 0.6414302587509155,
+        "model_better": true
+      },
+      {
+        "sample": "480nm",
+        "model_rel_l2": 1.13986337184906,
+        "tikhonov_rel_l2": 1.1919211149215698,
+        "model_sam": 1.4040030241012573,
+        "tikhonov_sam": 1.269543170928955,
+        "model_better": true
+      },
+      {
+        "sample": "520nm",
+        "model_rel_l2": 0.24340127408504486,
+        "tikhonov_rel_l2": 0.46507665514945984,
+        "model_sam": 0.24207720160484314,
+        "tikhonov_sam": 0.3243888318538666,
+        "model_better": true
+      },
+      {
+        "sample": "560nm",
+        "model_rel_l2": 0.3548072874546051,
+        "tikhonov_rel_l2": 0.5276256203651428,
+        "model_sam": 0.32101136445999146,
+        "tikhonov_sam": 0.3314089775085449,
+        "model_better": true
+      },
+      {
+        "sample": "570nm",
+        "model_rel_l2": 1.4205154180526733,
+        "tikhonov_rel_l2": 1.499945878982544,
+        "model_sam": 1.3038580417633057,
+        "tikhonov_sam": 1.0888360738754272,
+        "model_better": true
+      },
+      {
+        "sample": "590nm",
+        "model_rel_l2": 1.1251553297042847,
+        "tikhonov_rel_l2": 1.1661694049835205,
+        "model_sam": 0.7440211772918701,
+        "tikhonov_sam": 0.8006933331489563,
+        "model_better": true
+      },
+      {
+        "sample": "620nm",
+        "model_rel_l2": 1.0999232530593872,
+        "tikhonov_rel_l2": 1.163812279701233,
+        "model_sam": 1.5135456323623657,
+        "tikhonov_sam": 1.5638047456741333,
+        "model_better": true
+      }
+    ],
+    "sample_count_note": "All 15 public pairs are used for full-shape metrics. The paper-matched peak benchmark uses 14 samples because the public 620-nm file is not part of the published nine-single-peak Figure-7 set."
+  },
+  "selective_real_peak": {
+    "single_peak_mae_pct": 0.5817216843348807,
+    "multi_peak_mae_pct": 1.3013842688938364,
+    "fallback_rate_pct": 21.428571428571427,
+    "flagged_samples": [
+      "480nm",
+      "570nm",
+      "590nm"
+    ]
+  },
+  "efficiency": {
+    "environment": "Local CPU container, single-thread PyTorch/BLAS, batch size 1, representative M=16/N=256 instrument. GPU latency unavailable in current runtime.",
+    "rows": [
+      {
+        "method": "IC-PRO-S",
+        "params": 291499,
+        "fp32_weight_mb": 1.1119804382324219,
+        "learned_macs": 73875600,
+        "median_ms": 4.250438499639131,
+        "mean_ms": 4.907723433249582,
+        "p90_ms": 6.0819436996098375,
+        "repeats": 30,
+        "algorithmic_note": "single deterministic learned pass + two MxM analytic solves (anchor and proximal correction)"
+      },
+      {
+        "method": "Tikhonov",
+        "params": 0,
+        "fp32_weight_mb": 0.0,
+        "learned_macs": 0,
+        "median_ms": 0.05559650026043528,
+        "mean_ms": 0.07768386664489906,
+        "p90_ms": 0.18016610010818115,
+        "repeats": 30,
+        "algorithmic_note": "one MxM analytic solve"
+      },
+      {
+        "method": "ReSpecNN per-device",
+        "params": 3375664,
+        "fp32_weight_mb": 12.87713623046875,
+        "learned_macs": 4412672,
+        "median_ms": 0.669267500143178,
+        "mean_ms": 0.8272605667116295,
+        "p90_ms": 1.1723706996235705,
+        "repeats": 30,
+        "algorithmic_note": "single learned pass; separate ~3.4M model must be trained/stored for each response matrix"
+      },
+      {
+        "method": "Physics-anchor CNN",
+        "params": 290131,
+        "fp32_weight_mb": 1.1067619323730469,
+        "learned_macs": 73531392,
+        "median_ms": 3.833904499970231,
+        "mean_ms": 4.110675799953849,
+        "p90_ms": 5.363500200019189,
+        "repeats": 30,
+        "algorithmic_note": "single learned residual pass + one MxM anchor solve"
+      },
+      {
+        "method": "PnP proxy",
+        "params": 117361,
+        "fp32_weight_mb": 0.4476966857910156,
+        "learned_macs": 355958784,
+        "median_ms": 21.13169199992626,
+        "mean_ms": 21.70328590009376,
+        "p90_ms": 23.60913469992738,
+        "repeats": 10,
+        "algorithmic_note": "12 denoiser/data-consistency iterations after Tikhonov initialization"
+      },
+      {
+        "method": "NNLS-TV",
+        "params": 0,
+        "fp32_weight_mb": 0,
+        "learned_macs": 0,
+        "median_ms": 16.21173749981608,
+        "mean_ms": 16.812692500138837,
+        "p90_ms": 20.680165300109362,
+        "repeats": 8,
+        "algorithmic_note": "120 ADMM iterations; one 256x256 factorization plus repeated triangular solves"
+      }
+    ]
+  },
+  "controlled_stress": {
+    "protocol": "Controlled 192-spectrum stress subset: same base spectra across methods. Dropout is known to variable-operator methods but zero-filled for fixed-input ReSpecNN. Calibration shift generates measurements with response rolled 6 wavelength bins while all solvers use nominal calibration.",
+    "rows": [
+      {
+        "condition": "nominal",
+        "method": "IC-PRO-S",
+        "rel_l2": 0.352524071931839,
+        "forward_residual": 0.18374739587306976,
+        "n_spectra": 192
+      },
+      {
+        "condition": "nominal",
+        "method": "Tikhonov",
+        "rel_l2": 0.4830092191696167,
+        "forward_residual": 0.23359954357147217,
+        "n_spectra": 192
+      },
+      {
+        "condition": "nominal",
+        "method": "NNLS-TV",
+        "rel_l2": 0.4239341914653778,
+        "forward_residual": 0.17875707149505615,
+        "n_spectra": 192
+      },
+      {
+        "condition": "nominal",
+        "method": "ReSpecNN per-device",
+        "rel_l2": 0.3737633228302002,
+        "forward_residual": 0.2013588696718216,
+        "n_spectra": 192
+      },
+      {
+        "condition": "nominal",
+        "method": "Physics-anchor CNN",
+        "rel_l2": 0.40387293696403503,
+        "forward_residual": 0.23173727095127106,
+        "n_spectra": 192
+      },
+      {
+        "condition": "nominal",
+        "method": "PnP proxy",
+        "rel_l2": 0.5425648093223572,
+        "forward_residual": 0.2411002665758133,
+        "n_spectra": 192
+      },
+      {
+        "condition": "noise_0.05",
+        "method": "IC-PRO-S",
+        "rel_l2": 0.5634093880653381,
+        "forward_residual": 0.42692938446998596,
+        "n_spectra": 192
+      },
+      {
+        "condition": "noise_0.05",
+        "method": "Tikhonov",
+        "rel_l2": 0.5922410488128662,
+        "forward_residual": 0.44202733039855957,
+        "n_spectra": 192
+      },
+      {
+        "condition": "noise_0.05",
+        "method": "NNLS-TV",
+        "rel_l2": 0.658586323261261,
+        "forward_residual": 0.4040977656841278,
+        "n_spectra": 192
+      },
+      {
+        "condition": "noise_0.05",
+        "method": "ReSpecNN per-device",
+        "rel_l2": 0.5549058318138123,
+        "forward_residual": 0.44179844856262207,
+        "n_spectra": 192
+      },
+      {
+        "condition": "noise_0.05",
+        "method": "Physics-anchor CNN",
+        "rel_l2": 0.5823285579681396,
+        "forward_residual": 0.4309740960597992,
+        "n_spectra": 192
+      },
+      {
+        "condition": "noise_0.05",
+        "method": "PnP proxy",
+        "rel_l2": 1.9563907384872437,
+        "forward_residual": 0.8859257698059082,
+        "n_spectra": 192
+      },
+      {
+        "condition": "dropout_0.5",
+        "method": "IC-PRO-S",
+        "rel_l2": 0.42604175209999084,
+        "forward_residual": 0.1951918751001358,
+        "n_spectra": 192
+      },
+      {
+        "condition": "dropout_0.5",
+        "method": "Tikhonov",
+        "rel_l2": 0.5504016876220703,
+        "forward_residual": 0.27890121936798096,
+        "n_spectra": 192
+      },
+      {
+        "condition": "dropout_0.5",
+        "method": "NNLS-TV",
+        "rel_l2": 0.48226287961006165,
+        "forward_residual": 0.18241459131240845,
+        "n_spectra": 192
+      },
+      {
+        "condition": "dropout_0.5",
+        "method": "ReSpecNN per-device",
+        "rel_l2": 0.8403306007385254,
+        "forward_residual": 0.6169994473457336,
+        "n_spectra": 192
+      },
+      {
+        "condition": "dropout_0.5",
+        "method": "Physics-anchor CNN",
+        "rel_l2": 0.48916125297546387,
+        "forward_residual": 0.27859047055244446,
+        "n_spectra": 192
+      },
+      {
+        "condition": "dropout_0.5",
+        "method": "PnP proxy",
+        "rel_l2": 0.5254952907562256,
+        "forward_residual": 0.2079317718744278,
+        "n_spectra": 192
+      },
+      {
+        "condition": "calibration_shift_6",
+        "method": "IC-PRO-S",
+        "rel_l2": 0.3894475996494293,
+        "forward_residual": 0.18512119352817535,
+        "n_spectra": 192
+      },
+      {
+        "condition": "calibration_shift_6",
+        "method": "Tikhonov",
+        "rel_l2": 0.48972639441490173,
+        "forward_residual": 0.23554886877536774,
+        "n_spectra": 192
+      },
+      {
+        "condition": "calibration_shift_6",
+        "method": "NNLS-TV",
+        "rel_l2": 0.43245017528533936,
+        "forward_residual": 0.18086694180965424,
+        "n_spectra": 192
+      },
+      {
+        "condition": "calibration_shift_6",
+        "method": "ReSpecNN per-device",
+        "rel_l2": 0.3861999809741974,
+        "forward_residual": 0.20102441310882568,
+        "n_spectra": 192
+      },
+      {
+        "condition": "calibration_shift_6",
+        "method": "Physics-anchor CNN",
+        "rel_l2": 0.4177877902984619,
+        "forward_residual": 0.23077575862407684,
+        "n_spectra": 192
+      },
+      {
+        "condition": "calibration_shift_6",
+        "method": "PnP proxy",
+        "rel_l2": 0.5809981226921082,
+        "forward_residual": 0.2363465279340744,
+        "n_spectra": 192
+      }
+    ],
+    "pnp_note": "PnP is a controlled iterative learned-prior proxy, not PiGDM."
+  },
+  "scientific_decisions": {
+    "keep_hard_null_claim": false,
+    "keep_fisher_priority_claim": false,
+    "soft_proximal_step_supported": true,
+    "learned_eta_strictly_superior_everywhere": false,
+    "learned_eta_interpretation": "Learned eta modestly improves nominal Test mean vs fixed eta=0.5 and strongly helps 50% dropout in seed-7 stress, but fixed eta is slightly better on mean OOD and very high noise. Treat adaptivity as context-dependent rather than universally superior.",
+    "response_conditioning_supported": true,
+    "nearest_manifold_ood_guard_supported": true,
+    "modern_baseline_claim": "IC-PRO-S is best on the controlled Test split and on 50% dropout; per-device ReSpecNN is slightly better on OOD and severe-noise/calibration-shift cases but requires a separate ~3.4M-parameter model per response matrix.",
+    "final_novelty": "family-level deterministic response-conditioned inversion + exact quadratic proximal data-fidelity direction with learned under-relaxation + structural cross-instrument extrapolation + simulation-only failure-aware selective deployment"
+  }
+}

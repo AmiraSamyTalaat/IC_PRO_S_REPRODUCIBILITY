@@ -1,0 +1,28 @@
+{
+  "cmd": [
+    "/usr/bin/python3",
+    "/kaggle/working/ICPRO_capacity_V5/prepare_matched_capacity_ablation.py",
+    "--replay",
+    "/kaggle/working/ICPRO_capacity_V5/V7_SOURCE_DEFINED_MAIN_EVAL_TENSORS.pt",
+    "--out",
+    "/kaggle/working/ICPRO_capacity_V5/outputs",
+    "--steps",
+    "1050",
+    "--seeds",
+    "3",
+    "7",
+    "11",
+    "--arms",
+    "full",
+    "no_fisher",
+    "anchor_grad_only",
+    "--device",
+    "cuda"
+  ],
+  "runner_sha256": "cccb924f683bddead8e1d12682dff385506d53911970dbe42dc63bd4d0ce25d4",
+  "replay_sha256": "5611ed607214a97451d853df6eac984215fb134b20d30706c38adcdc3b7a4f2e",
+  "data_origin": "Auto-extracted Kaggle Dataset: /kaggle/input/datasets/prinprin/icpro-v5-ablation-20261015-101752-87324",
+  "torch": "2.11.0+cu128",
+  "gpu": "Tesla T4",
+  "timestamp_utc": "2026-10-15T10:37:35.651554+00:00"
+}

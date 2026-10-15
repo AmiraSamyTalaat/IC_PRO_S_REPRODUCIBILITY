@@ -1,0 +1,18 @@
+{
+  "test": "single-thread CPU timing and frozen A12 seed-7 spectral diagnostics",
+  "n_cases": 768,
+  "operators": 6,
+  "seed": 7,
+  "input_source": "frozen_inputs/A12_EXACT_BENCHMARK_TENSORS.pt",
+  "checkpoint": "a12_frozen_source/checkpoints/FINAL_FIRNO_GATE_PROX_seed7.pt",
+  "max_abs_rel_l2_difference_vs_archive": 1.0728836059570312e-06,
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "torch_version": "2.10.0+cpu",
+  "threads": 1,
+  "batch_size": 1,
+  "warmup": 20,
+  "timed_repetitions": 120,
+  "factorization_cache": "not used",
+  "OOD_guard": "not timed; historical implementation unavailable",
+  "note": "Diagnostic on one CPU / one frozen M16 sensing matrix; cannot compare directly with historical Table 10 timings from a different environment. No added wet-lab or independently acquired spectrometry data."
+}

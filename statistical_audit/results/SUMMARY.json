@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source": "Original A12 archived per-case errors; no model retraining",
+  "unit": "128 unique spectra per regime, each evaluated by 2 frozen operators",
+  "n_test_evaluations_per_regime": 256,
+  "n_spectrum_clusters_per_regime": 128,
+  "regimes": [
+    "interpolation",
+    "moderate_M_extrapolation",
+    "severe_structural"
+  ],
+  "tests": 15,
+  "bootstrap": 20000,
+  "bootstrap_rng_seed": 20261015,
+  "multiplicity": "Holm across 15 tests",
+  "inference_scope": "Fixed operator pair only; NOT instrument-population sampling"
+}

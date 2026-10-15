@@ -1,0 +1,75 @@
+{
+  "package": "N05_A12_CROSS_INSTRUMENT_BASELINE_EXPANSION_V2_FINAL",
+  "files": [
+    {
+      "path": "src/core.py",
+      "bytes": 5729,
+      "sha256": "68c8bbf671e3d986220de81965dc5bb7761ce7bf578dd6f24ea6f3601f8ced54"
+    },
+    {
+      "path": "src/synthetic_v2.py",
+      "bytes": 5939,
+      "sha256": "0d3e0232010cf89c372cebf638d6be72e3a7671bda6f56964571bc11c9823680"
+    },
+    {
+      "path": "scripts/benchmark.py",
+      "bytes": 4636,
+      "sha256": "103673762efdec244d33804110c1476cfae47124ef4bb3e684689ba304c7971a"
+    },
+    {
+      "path": "scripts/baselines.py",
+      "bytes": 8424,
+      "sha256": "717616e0b2d70680117a98c7b89212942023bc74a0ebb24666db64e7221f8074"
+    },
+    {
+      "path": "scripts/pigdm.py",
+      "bytes": 5998,
+      "sha256": "7e0f32e35c1cae4eada4b991595c91f9ffcb3f20cf5515c7b50ec67a99d52344"
+    },
+    {
+      "path": "scripts/run_cross_instrument.py",
+      "bytes": 13336,
+      "sha256": "d55fda50171346cfae24277e71439bb4d65f05f41b5dbef3c0123dffdc7341f6"
+    },
+    {
+      "path": "checkpoints/FINAL_FIRNO_GATE_PROX_seed3.pt",
+      "bytes": 1191152,
+      "sha256": "bb5af30443d4235f7a430185623cd2eee1aab1d49d059419a55b59765fe1001c"
+    },
+    {
+      "path": "checkpoints/FINAL_FIRNO_GATE_PROX_seed7.pt",
+      "bytes": 1191152,
+      "sha256": "2522ae6164eb7c4ac476a5152a4f69c6554b8c84974dd34423310f45c7ad895f"
+    },
+    {
+      "path": "checkpoints/FINAL_FIRNO_GATE_PROX_seed11.pt",
+      "bytes": 1191227,
+      "sha256": "b2cd990ba36f4c1ad08c126be2bb3b47dec8496d973582059618b3d03ba71082"
+    },
+    {
+      "path": "checkpoints/FINAL_FIRNO_GATE_PROX_seed19.pt",
+      "bytes": 1191227,
+      "sha256": "a137d9b9bd2a7ef291d5eb8a9d85944e38c2f0f026e9a8796948e95fa8fc00f9"
+    },
+    {
+      "path": "checkpoints/FINAL_FIRNO_GATE_PROX_seed23.pt",
+      "bytes": 1191227,
+      "sha256": "4ee417758f8c284a9469b945f7441a2d995bb279ed30e59fb931e0a025479ce4"
+    },
+    {
+      "path": "references/ReSpecNN_author_model_log_sig.py",
+      "bytes": 2490,
+      "sha256": "af2b6b9c7d2dbbcb6dac5e10991c7c3e71da00c8f759767891f039d98ad70d09"
+    },
+    {
+      "path": "references/ReSpecNN_author_README.md",
+      "bytes": 122,
+      "sha256": "283b435fe0fe995d6fb4bde9172eaeed171409cfd98cad62e92a82ec1339f1c6"
+    },
+    {
+      "path": "references/BASELINE_SOURCE_NOTES.txt",
+      "bytes": 1142,
+      "sha256": "d74d64a3e22743a1c5d920993cfb17dc1228714de16ea483d7bc7b81d6c136eb"
+    }
+  ]
+}

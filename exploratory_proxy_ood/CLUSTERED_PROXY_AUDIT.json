@@ -1,0 +1,35 @@
+{
+  "source_provenance": "Historical A12 inputs and case errors; exploratory support-score proxy, not original published guard",
+  "independence_unit": "(regime,sample) = 384 unique spectra, 2 operators per spectrum, 128 independent spectra per regime",
+  "number_of_operator_matrices": 6,
+  "n_case_evaluations": 768,
+  "n_independent_spectral_clusters": 384,
+  "selection": "99th-percentile separate simulation threshold; frozen case scores; offline NNLS-TV replacement for flagged cases",
+  "n_flagged": 13,
+  "rejection_percent": 1.6927083333333333,
+  "mean_icpros": 0.3888413119669661,
+  "mean_routed_counterfactual": 0.3883899165660547,
+  "absolute_mean_gain_routing": 0.0004513954009114584,
+  "routing_improvement_95CI_clustered": [
+    -0.00013891065949544272,
+    0.0012742840408723939
+  ],
+  "flagged_fraction_95CI_clustered": [
+    0.0078125,
+    0.02734375
+  ],
+  "lowest_half_risk": 0.45136006148729163,
+  "lowest_half_vs_all_delta": 0.06251874952032554,
+  "lowest_half_delta_95CI_clustered": [
+    0.038895105008509887,
+    0.08683901492666794
+  ],
+  "nominal_bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261015,
+  "essential_limitations": [
+    "not the published OOD guard",
+    "no true OOD labels",
+    "spectral clustering does not estimate population of operators",
+    "rerouting changes errors offline only, not measured end-to-end latency"
+  ]
+}

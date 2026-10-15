@@ -1,0 +1,6 @@
+method,rel_l2_slope_per_unit_actual_perturbation,output_drift_slope_per_unit_actual_perturbation
+IC-PRO-S fixed eta=0.5,0.4621979032246918,1.6632676267877589
+IC-PRO-S full eta=1,1.0548778439181516,2.5260099753694063
+IC-PRO-S learned eta,0.5178444363802406,1.7861299627812046
+IC-PRO-S proposal only,0.09997471591572829,117055.74110332697
+Tikhonov,0.042611909048987595,

@@ -1,0 +1,394 @@
+{
+  "simulation_only_ood_benchmark": {
+    "id_n": 800,
+    "ood_n": 800,
+    "ood_types": [
+      "response",
+      "dropout",
+      "prior",
+      "noise"
+    ],
+    "metrics": [
+      {
+        "score": "nearest_manifold",
+        "AUROC": 0.9681890625,
+        "AUPRC": 0.9715369212280033,
+        "FPR95": 0.1825
+      },
+      {
+        "score": "knn_density",
+        "AUROC": 0.9470125,
+        "AUPRC": 0.9542372975634393,
+        "FPR95": 0.30375
+      },
+      {
+        "score": "mahalanobis",
+        "AUROC": 0.8688234375,
+        "AUPRC": 0.8965387977832515,
+        "FPR95": 0.65
+      },
+      {
+        "score": "isolation_forest",
+        "AUROC": 0.8355124999999999,
+        "AUPRC": 0.8652515973925328,
+        "FPR95": 0.69125
+      },
+      {
+        "score": "forward_residual",
+        "AUROC": 0.8067171874999999,
+        "AUPRC": 0.807705820633862,
+        "FPR95": 0.54625
+      }
+    ],
+    "per_type_AUROC": {
+      "response": {
+        "nearest_manifold": 0.8845437500000001,
+        "knn_density": 0.8111062499999999,
+        "mahalanobis": 0.61655625,
+        "isolation_forest": 0.5828,
+        "forward_residual": 0.7405625
+      },
+      "dropout": {
+        "nearest_manifold": 1.0,
+        "knn_density": 1.0,
+        "mahalanobis": 1.0,
+        "isolation_forest": 0.9999875,
+        "forward_residual": 0.993275
+      },
+      "prior": {
+        "nearest_manifold": 0.9900875,
+        "knn_density": 0.98223125,
+        "mahalanobis": 0.8928687500000001,
+        "isolation_forest": 0.8477499999999999,
+        "forward_residual": 0.8782687499999999
+      },
+      "noise": {
+        "nearest_manifold": 0.9981249999999999,
+        "knn_density": 0.9947125000000001,
+        "mahalanobis": 0.9658687499999999,
+        "isolation_forest": 0.9115125000000001,
+        "forward_residual": 0.6147625000000001
+      }
+    }
+  },
+  "real_single_peak_risk_coverage": {
+    "nearest_manifold": [
+      {
+        "coverage_learned": 1.0,
+        "selective_MAE_pct": 5.3071232657126055,
+        "accepted_learned_MAE_pct": 5.3071232657126055
+      },
+      {
+        "coverage_learned": 0.8888888888888888,
+        "selective_MAE_pct": 3.6567036476935755,
+        "accepted_learned_MAE_pct": 3.9901854601669493
+      },
+      {
+        "coverage_learned": 0.7777777777777778,
+        "selective_MAE_pct": 0.5629643220701918,
+        "accepted_learned_MAE_pct": 0.5637253492942562
+      },
+      {
+        "coverage_learned": 0.6666666666666667,
+        "selective_MAE_pct": 0.5817216843348807,
+        "accepted_learned_MAE_pct": 0.6475505985536999
+      },
+      {
+        "coverage_learned": 0.5555555555555556,
+        "selective_MAE_pct": 0.7005570972879407,
+        "accepted_learned_MAE_pct": 0.6701088466066858
+      },
+      {
+        "coverage_learned": 0.4444444444444444,
+        "selective_MAE_pct": 0.8114851770674156,
+        "accepted_learned_MAE_pct": 0.6292299283726703
+      },
+      {
+        "coverage_learned": 0.33333333333333337,
+        "selective_MAE_pct": 0.8114851770674156,
+        "accepted_learned_MAE_pct": 0.694307313696623
+      },
+      {
+        "coverage_learned": 0.2222222222222222,
+        "selective_MAE_pct": 0.6673117121222671,
+        "accepted_learned_MAE_pct": 0.2888326597297863
+      },
+      {
+        "coverage_learned": 0.11111111111111116,
+        "selective_MAE_pct": 0.7094660951977732,
+        "accepted_learned_MAE_pct": 0.21592189260233194
+      },
+      {
+        "coverage_learned": 0.0,
+        "selective_MAE_pct": 0.7397160221807072,
+        "accepted_learned_MAE_pct": null
+      }
+    ],
+    "knn_density": [
+      {
+        "coverage_learned": 1.0,
+        "selective_MAE_pct": 5.3071232657126055,
+        "accepted_learned_MAE_pct": 5.3071232657126055
+      },
+      {
+        "coverage_learned": 0.8888888888888888,
+        "selective_MAE_pct": 3.6567036476935755,
+        "accepted_learned_MAE_pct": 3.9901854601669493
+      },
+      {
+        "coverage_learned": 0.7777777777777778,
+        "selective_MAE_pct": 0.5629643220701918,
+        "accepted_learned_MAE_pct": 0.5637253492942562
+      },
+      {
+        "coverage_learned": 0.6666666666666667,
+        "selective_MAE_pct": 0.5817216843348807,
+        "accepted_learned_MAE_pct": 0.6475505985536999
+      },
+      {
+        "coverage_learned": 0.5555555555555556,
+        "selective_MAE_pct": 0.7005570972879407,
+        "accepted_learned_MAE_pct": 0.6701088466066858
+      },
+      {
+        "coverage_learned": 0.4444444444444444,
+        "selective_MAE_pct": 0.8114851770674156,
+        "accepted_learned_MAE_pct": 0.6292299283726703
+      },
+      {
+        "coverage_learned": 0.33333333333333337,
+        "selective_MAE_pct": 0.8114851770674156,
+        "accepted_learned_MAE_pct": 0.694307313696623
+      },
+      {
+        "coverage_learned": 0.2222222222222222,
+        "selective_MAE_pct": 0.6673117121222671,
+        "accepted_learned_MAE_pct": 0.2888326597297863
+      },
+      {
+        "coverage_learned": 0.11111111111111116,
+        "selective_MAE_pct": 0.7094660951977732,
+        "accepted_learned_MAE_pct": 0.21592189260233194
+      },
+      {
+        "coverage_learned": 0.0,
+        "selective_MAE_pct": 0.7397160221807072,
+        "accepted_learned_MAE_pct": null
+      }
+    ],
+    "mahalanobis": [
+      {
+        "coverage_learned": 1.0,
+        "selective_MAE_pct": 5.3071232657126055,
+        "accepted_learned_MAE_pct": 5.3071232657126055
+      },
+      {
+        "coverage_learned": 0.8888888888888888,
+        "selective_MAE_pct": 3.6567036476935755,
+        "accepted_learned_MAE_pct": 3.9901854601669493
+      },
+      {
+        "coverage_learned": 0.7777777777777778,
+        "selective_MAE_pct": 3.6754610099582643,
+        "accepted_learned_MAE_pct": 4.551529975371143
+      },
+      {
+        "coverage_learned": 0.6666666666666667,
+        "selective_MAE_pct": 0.5817216843348807,
+        "accepted_learned_MAE_pct": 0.6475505985536999
+      },
+      {
+        "coverage_learned": 0.5555555555555556,
+        "selective_MAE_pct": 0.7005570972879407,
+        "accepted_learned_MAE_pct": 0.6701088466066858
+      },
+      {
+        "coverage_learned": 0.4444444444444444,
+        "selective_MAE_pct": 0.8114851770674156,
+        "accepted_learned_MAE_pct": 0.6292299283726703
+      },
+      {
+        "coverage_learned": 0.33333333333333337,
+        "selective_MAE_pct": 0.8114851770674156,
+        "accepted_learned_MAE_pct": 0.694307313696623
+      },
+      {
+        "coverage_learned": 0.2222222222222222,
+        "selective_MAE_pct": 0.8417351040503497,
+        "accepted_learned_MAE_pct": 0.9335000242437684
+      },
+      {
+        "coverage_learned": 0.11111111111111116,
+        "selective_MAE_pct": 0.6975616391052011,
+        "accepted_learned_MAE_pct": 0.36174342685724065
+      },
+      {
+        "coverage_learned": 0.0,
+        "selective_MAE_pct": 0.7397160221807072,
+        "accepted_learned_MAE_pct": null
+      }
+    ],
+    "isolation_forest": [
+      {
+        "coverage_learned": 1.0,
+        "selective_MAE_pct": 5.3071232657126055,
+        "accepted_learned_MAE_pct": 5.3071232657126055
+      },
+      {
+        "coverage_learned": 0.8888888888888888,
+        "selective_MAE_pct": 5.425958678665665,
+        "accepted_learned_MAE_pct": 5.903668754140584
+      },
+      {
+        "coverage_learned": 0.7777777777777778,
+        "selective_MAE_pct": 2.3322193530422815,
+        "accepted_learned_MAE_pct": 2.7505633995498386
+      },
+      {
+        "coverage_learned": 0.6666666666666667,
+        "selective_MAE_pct": 2.3509767153069703,
+        "accepted_learned_MAE_pct": 3.1988616571852124
+      },
+      {
+        "coverage_learned": 0.5555555555555556,
+        "selective_MAE_pct": 0.7005570972879407,
+        "accepted_learned_MAE_pct": 0.6701088466066858
+      },
+      {
+        "coverage_learned": 0.4444444444444444,
+        "selective_MAE_pct": 0.8114851770674156,
+        "accepted_learned_MAE_pct": 0.6292299283726703
+      },
+      {
+        "coverage_learned": 0.33333333333333337,
+        "selective_MAE_pct": 0.8114851770674156,
+        "accepted_learned_MAE_pct": 0.694307313696623
+      },
+      {
+        "coverage_learned": 0.2222222222222222,
+        "selective_MAE_pct": 0.8417351040503497,
+        "accepted_learned_MAE_pct": 0.9335000242437684
+      },
+      {
+        "coverage_learned": 0.11111111111111116,
+        "selective_MAE_pct": 0.8838894871258558,
+        "accepted_learned_MAE_pct": 1.5052566216302963
+      },
+      {
+        "coverage_learned": 0.0,
+        "selective_MAE_pct": 0.7397160221807072,
+        "accepted_learned_MAE_pct": null
+      }
+    ],
+    "forward_residual": [
+      {
+        "coverage_learned": 1.0,
+        "selective_MAE_pct": 5.3071232657126055,
+        "accepted_learned_MAE_pct": 5.3071232657126055
+      },
+      {
+        "coverage_learned": 0.8888888888888888,
+        "selective_MAE_pct": 2.213383940089221,
+        "accepted_learned_MAE_pct": 2.4735878943922054
+      },
+      {
+        "coverage_learned": 0.7777777777777778,
+        "selective_MAE_pct": 2.2321413023539103,
+        "accepted_learned_MAE_pct": 2.818275614485721
+      },
+      {
+        "coverage_learned": 0.6666666666666667,
+        "selective_MAE_pct": 0.5817216843348807,
+        "accepted_learned_MAE_pct": 0.6475505985536999
+      },
+      {
+        "coverage_learned": 0.5555555555555556,
+        "selective_MAE_pct": 0.6926497641143556,
+        "accepted_learned_MAE_pct": 0.6103358143558902
+      },
+      {
+        "coverage_learned": 0.4444444444444444,
+        "selective_MAE_pct": 0.8114851770674156,
+        "accepted_learned_MAE_pct": 0.6292299283726703
+      },
+      {
+        "coverage_learned": 0.33333333333333337,
+        "selective_MAE_pct": 0.8417351040503497,
+        "accepted_learned_MAE_pct": 0.7669992736294499
+      },
+      {
+        "coverage_learned": 0.2222222222222222,
+        "selective_MAE_pct": 0.8417351040503497,
+        "accepted_learned_MAE_pct": 0.9335000242437684
+      },
+      {
+        "coverage_learned": 0.11111111111111116,
+        "selective_MAE_pct": 0.8838894871258558,
+        "accepted_learned_MAE_pct": 1.5052566216302963
+      },
+      {
+        "coverage_learned": 0.0,
+        "selective_MAE_pct": 0.7397160221807072,
+        "accepted_learned_MAE_pct": null
+      }
+    ]
+  },
+  "real_score_values": {
+    "nearest_manifold": {
+      "400nm": 0.18999207594471038,
+      "430nm": 0.07269279222720175,
+      "450nm": 0.07622739738639718,
+      "470nm": 0.09414333039806967,
+      "480nm": 1.4641506728087157,
+      "520nm": 0.1518632001903256,
+      "560nm": 0.6379084024857284,
+      "570nm": 1.3543254586230011,
+      "590nm": 1.3046651088115768
+    },
+    "knn_density": {
+      "400nm": 0.1955480613465253,
+      "430nm": 0.07485565004284975,
+      "450nm": 0.07938851660846322,
+      "470nm": 0.09786605530273908,
+      "480nm": 1.4658967240004208,
+      "520nm": 0.15707305243813027,
+      "560nm": 0.644857010322472,
+      "570nm": 1.358369978130314,
+      "590nm": 1.31261661423144
+    },
+    "mahalanobis": {
+      "400nm": 248.50787101855042,
+      "430nm": 57.7380877368489,
+      "450nm": 38.42106605742843,
+      "470nm": 46.50238115959656,
+      "480nm": 11752.555309190057,
+      "520nm": 103.25208404957951,
+      "560nm": 1805.2816071341156,
+      "570nm": 8879.581820370424,
+      "590nm": 9394.607067960324
+    },
+    "isolation_forest": {
+      "400nm": 0.6747184246558459,
+      "430nm": 0.6391729405646988,
+      "450nm": 0.560208062244454,
+      "470nm": 0.5517436112894258,
+      "480nm": 0.7183551046916002,
+      "520nm": 0.6575444051340478,
+      "560nm": 0.7397702028986798,
+      "570nm": 0.7346674732999717,
+      "590nm": 0.7273761855513359
+    },
+    "forward_residual": {
+      "400nm": 1.7873207330703735,
+      "430nm": 0.3880689740180969,
+      "450nm": 0.14069461822509766,
+      "470nm": 0.12908504903316498,
+      "480nm": 10.948957443237305,
+      "520nm": 0.25516703724861145,
+      "560nm": 1.6792229413986206,
+      "570nm": 49.743465423583984,
+      "590nm": 44.569095611572266
+    }
+  },
+  "governance": "All OOD detector fitting/calibration uses simulation only. Real labels are used only after scoring to report risk-coverage."
+}

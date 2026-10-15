@@ -1,0 +1,23 @@
+{
+  "test_type": "CPU quick code-integrity smoke test",
+  "source": "same scripts as V2 final; quick mode changes only budgets/sample counts",
+  "status": "PASS",
+  "quick_mode": true,
+  "methods_present": [
+    "IC-PRO-S",
+    "MGDUN-style",
+    "NNLS-TV",
+    "PiGDM controlled",
+    "PnP tuned",
+    "ReSpecNN per-device",
+    "Tikhonov"
+  ],
+  "missing": [],
+  "paper_use": "FORBIDDEN: quick-mode numerical results are not manuscript evidence",
+  "checks": [
+    "all seven method paths completed",
+    "aggregation completed",
+    "operator-level table emitted",
+    "partial-state ZIP was valid and resumable"
+  ]
+}

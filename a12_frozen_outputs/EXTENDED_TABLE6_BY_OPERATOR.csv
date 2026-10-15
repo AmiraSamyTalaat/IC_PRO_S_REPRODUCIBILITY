@@ -1,0 +1,43 @@
+regime,operator,M,method,mean_rel_l2,std_rel_l2,fraction_better_than_tikhonov_pct,target_retraining,deployment
+interpolation,interp_M16_A,16,IC-PRO-S,0.3684033850731794,0.2907598158149921,88.28125,No,one shared deterministic family model
+interpolation,interp_M16_A,16,MGDUN-style,0.4367573766600496,0.30185109476029454,79.6875,No,shared six-stage unfolding model
+interpolation,interp_M16_A,16,NNLS-TV,0.39546706799592357,0.3125356744256432,88.28125,No,120-iteration optimization
+interpolation,interp_M16_A,16,PiGDM controlled,0.8671672875061631,0.6464839071043307,3.125,No,shared diffusion prior + 50 guided reverse steps
+interpolation,interp_M16_A,16,PnP tuned,0.39388782577589154,0.2887891591128558,82.03125,No,shared denoiser + 12 iterative steps
+interpolation,interp_M16_A,16,ReSpecNN per-device,0.3758157307311194,0.3005195443345126,85.15625,Yes: per target response,separate target-response neural model
+interpolation,interp_M16_A,16,Tikhonov,0.475849554175511,0.2923703387577189,,No,analytic per response
+interpolation,interp_M24_B,24,IC-PRO-S,0.3326756321475841,0.26799434401376704,88.28125,No,one shared deterministic family model
+interpolation,interp_M24_B,24,MGDUN-style,0.4179087681307768,0.29059811633418386,68.75,No,shared six-stage unfolding model
+interpolation,interp_M24_B,24,NNLS-TV,0.37311158343800344,0.29911048637683335,89.0625,No,120-iteration optimization
+interpolation,interp_M24_B,24,PiGDM controlled,0.9870856028865092,0.7395249258403517,1.5625,No,shared diffusion prior + 50 guided reverse steps
+interpolation,interp_M24_B,24,PnP tuned,0.3604533527395688,0.25774287513846034,82.8125,No,shared denoiser + 12 iterative steps
+interpolation,interp_M24_B,24,ReSpecNN per-device,0.3863162175839534,0.30949426542802333,69.53125,Yes: per target response,separate target-response neural model
+interpolation,interp_M24_B,24,Tikhonov,0.44778256956487894,0.2973605868731323,,No,analytic per response
+moderate_M_extrapolation,moderate_M40,40,IC-PRO-S,0.29309505299897864,0.2574651651495759,90.625,No,one shared deterministic family model
+moderate_M_extrapolation,moderate_M40,40,MGDUN-style,0.3991288439913963,0.2869053244771083,74.21875,No,shared six-stage unfolding model
+moderate_M_extrapolation,moderate_M40,40,NNLS-TV,0.325196420395514,0.2778259966335545,92.1875,No,120-iteration optimization
+moderate_M_extrapolation,moderate_M40,40,PiGDM controlled,1.0473098339280114,0.8334135507418756,0.0,No,shared diffusion prior + 50 guided reverse steps
+moderate_M_extrapolation,moderate_M40,40,PnP tuned,0.3333722365787253,0.24822902228094637,85.15625,No,shared denoiser + 12 iterative steps
+moderate_M_extrapolation,moderate_M40,40,ReSpecNN per-device,0.35299535788362846,0.30873362729124787,75.0,Yes: per target response,separate target-response neural model
+moderate_M_extrapolation,moderate_M40,40,Tikhonov,0.4302125397953205,0.28712013566468053,,No,analytic per response
+moderate_M_extrapolation,moderate_M8,8,IC-PRO-S,0.5556431478471495,0.34588341200391537,67.1875,No,one shared deterministic family model
+moderate_M_extrapolation,moderate_M8,8,MGDUN-style,0.5386908753813865,0.3541227687287951,67.1875,No,shared six-stage unfolding model
+moderate_M_extrapolation,moderate_M8,8,NNLS-TV,0.46899537229910493,0.36426388967822515,79.6875,No,120-iteration optimization
+moderate_M_extrapolation,moderate_M8,8,PiGDM controlled,0.791770150186494,0.6274017804284535,50.78125,No,shared diffusion prior + 50 guided reverse steps
+moderate_M_extrapolation,moderate_M8,8,PnP tuned,0.5406471884343773,0.28841627326239955,77.34375,No,shared denoiser + 12 iterative steps
+moderate_M_extrapolation,moderate_M8,8,ReSpecNN per-device,0.4565018362918636,0.36014297715822274,88.28125,Yes: per target response,separate target-response neural model
+moderate_M_extrapolation,moderate_M8,8,Tikhonov,0.6219421667046845,0.24992372063105942,,No,analytic per response
+severe_structural,struct_M16,16,IC-PRO-S,0.40177300584036857,0.32419282392386956,85.9375,No,one shared deterministic family model
+severe_structural,struct_M16,16,MGDUN-style,0.4742918498814106,0.3316636139420417,71.09375,No,shared six-stage unfolding model
+severe_structural,struct_M16,16,NNLS-TV,0.4409577775222715,0.3500130334228626,75.78125,No,120-iteration optimization
+severe_structural,struct_M16,16,PiGDM controlled,0.797809248091653,0.627992601394421,6.25,No,shared diffusion prior + 50 guided reverse steps
+severe_structural,struct_M16,16,PnP tuned,0.41108982302830555,0.30914737524348174,82.03125,No,shared denoiser + 12 iterative steps
+severe_structural,struct_M16,16,ReSpecNN per-device,0.42081594269984635,0.3581072525506602,78.90625,Yes: per target response,separate target-response neural model
+severe_structural,struct_M16,16,Tikhonov,0.49435969337355345,0.333439742820655,,No,analytic per response
+severe_structural,struct_M32,32,IC-PRO-S,0.36948506865883246,0.2962161958618,78.90625,No,one shared deterministic family model
+severe_structural,struct_M32,32,MGDUN-style,0.4350386039586738,0.3074570940895087,64.84375,No,shared six-stage unfolding model
+severe_structural,struct_M32,32,NNLS-TV,0.38385518139693886,0.3186956153397104,79.6875,No,120-iteration optimization
+severe_structural,struct_M32,32,PiGDM controlled,1.0510730090318248,0.7708425371886573,0.0,No,shared diffusion prior + 50 guided reverse steps
+severe_structural,struct_M32,32,PnP tuned,0.3687981879338622,0.2854253031257065,75.0,No,shared denoiser + 12 iterative steps
+severe_structural,struct_M32,32,ReSpecNN per-device,0.40661896992241964,0.3384947833497176,67.96875,Yes: per target response,separate target-response neural model
+severe_structural,struct_M32,32,Tikhonov,0.45572684024227783,0.3257049587286714,,No,analytic per response

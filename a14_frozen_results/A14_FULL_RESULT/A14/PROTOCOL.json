@@ -1,0 +1,32 @@
+{
+  "status": "FROZEN_BEFORE_RESULTS",
+  "benchmark": "A14 proximal stability under norm-controlled smooth multiplicative calibration perturbations",
+  "base_benchmark": "A12_V1 operators and test spectra",
+  "seeds": [
+    3,
+    7,
+    11,
+    19,
+    23
+  ],
+  "epsilon_requested": [
+    0.0,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "noise_std_in_fixed_A12_measurements": 0.01,
+  "measurement_policy": "test y remains generated from the unperturbed true operator; reconstruction receives perturbed calibrated operator",
+  "perturbation": "two-pass smoothed multiplicative row perturbation followed by positivity clamp and row max normalization",
+  "methods": [
+    "IC-PRO-S learned eta",
+    "IC-PRO-S fixed eta=0.5",
+    "IC-PRO-S full eta=1",
+    "IC-PRO-S proposal only",
+    "Tikhonov"
+  ],
+  "training_or_finetuning": "none",
+  "purpose": "mechanistic validation of exact proximal reconciliation and under-relaxation stability"
+}

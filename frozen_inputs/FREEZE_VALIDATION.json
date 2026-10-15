@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "a12_exact_historical_input_recovered": true,
+  "a12_exact_input_hash": "556123c3d5af89281de2531317f01c690e4a4192f33b1ce7de2d9507ecee3f2e",
+  "a12_expected_hash": "556123c3d5af89281de2531317f01c690e4a4192f33b1ce7de2d9507ecee3f2e",
+  "v7_historical_raw_inputs_recovered": false,
+  "v7_source_defined_replay_frozen": true,
+  "v7_source_defined_tikhonov_test": 0.5078831911087036,
+  "v7_source_defined_tikhonov_ood": 0.5614391565322876,
+  "v7_historical_tikhonov_test": 0.49647483229637146,
+  "v7_historical_tikhonov_ood": 0.5458183288574219,
+  "v7_neural_replay_max_abs_difference": 0.011793464422225952,
+  "scientific_provenance_is_explicit": true
+}

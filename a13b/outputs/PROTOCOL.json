@@ -1,0 +1,35 @@
+{
+  "status": "FROZEN_BEFORE_EXPERIMENT",
+  "benchmark_name": "A13B measured-operator / experimental-target controlled benchmark",
+  "article": "Wang et al., Single-pixel p-graded-n junction spectrometers, Nature Communications 15, 1773 (2024)",
+  "source_data_sha256": "87a61c13e343cfb802642c0b029fb0b05b56465d8de6489cd7ddfba70b287ab1",
+  "raw_real_photocurrent_available_in_public_source_data": false,
+  "measurement_definition": "y = R_measured x_experimental / N; controlled forward projection, not raw-current measurement",
+  "response_source": "Fig1g measured voltage-dependent responsivity",
+  "target_source": "Fig3a-d ground-truth spectra measured by a commercial spectrometer",
+  "functional_range_nm": [
+    480,
+    820
+  ],
+  "N": 256,
+  "M_settings": [
+    32,
+    101
+  ],
+  "response_preprocessing": "interpolate to 480-820 nm and independently max-normalize each bias-response row; no experimental targets used",
+  "target_preprocessing": "interpolate, clamp negative source-data noise to zero, max-normalize for shape reconstruction",
+  "zero_shot_seeds": [
+    3,
+    7,
+    11,
+    19,
+    23
+  ],
+  "response_only_adaptation": "seed7 initialization; measured R + synthetic spectra only; no experimental target spectra used for training/selection",
+  "measurement_conditions": [
+    "controlled_noiseless",
+    "controlled_noise_0p005"
+  ],
+  "direct_NSF_leaderboard_comparison": false,
+  "reason": "NSF publication used actual measured current; raw current curves are not in the public source-data workbook"
+}

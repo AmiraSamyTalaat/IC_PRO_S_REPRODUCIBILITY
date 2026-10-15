@@ -1,0 +1,48 @@
+{
+  "package": "N05_A12_CROSS_INSTRUMENT_BASELINE_EXPANSION_V2_FINAL",
+  "manuscript_frozen": true,
+  "primary_goal": "Expand central cross-instrument extrapolation experiment to modern baselines before any manuscript edit.",
+  "benchmark": {
+    "N": 256,
+    "noise_std": 0.01,
+    "test_spectra_per_operator": 128,
+    "validation_spectra_per_operator": 64,
+    "regimes": {
+      "interpolation": [
+        "M16",
+        "M24"
+      ],
+      "moderate_M_extrapolation": [
+        "M8",
+        "M40"
+      ],
+      "severe_structural": [
+        "M16",
+        "M32"
+      ]
+    },
+    "severe_families": [
+      "smoothed-random",
+      "triangular",
+      "high-frequency mixed"
+    ]
+  },
+  "methods": [
+    "IC-PRO-S 5 recovered V7 checkpoints",
+    "Tikhonov",
+    "NNLS-TV",
+    "PnP tuned",
+    "MGDUN-style 3 seeds",
+    "ReSpecNN per-device",
+    "PiGDM controlled"
+  ],
+  "result_gate": {
+    "must_have_all_methods": true,
+    "same_sample_pairing": true,
+    "must_emit_pairwise_stats": true,
+    "quick_mode_numbers_forbidden_in_manuscript": true
+  },
+  "status": "FULL_RUN_PENDING_KAGGLE_GPU",
+  "quick_smoke_test": "PASS_ALL_7_METHODS_CPU_CODE_INTEGRITY_ONLY",
+  "result_zip_expected": "N05_A12_CROSS_INSTRUMENT_RESULTS.zip"
+}

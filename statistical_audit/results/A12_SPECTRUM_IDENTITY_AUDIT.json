@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "source": "Exact archived A12 input tensors",
+  "records": [
+    {
+      "regime": "interpolation",
+      "split": "test_x",
+      "response_operators": [
+        "interp_M16_A",
+        "interp_M24_B"
+      ],
+      "observations": 256,
+      "unique_input_spectra": 128,
+      "spectra_identical_for_two_operators": true,
+      "unique_spectra_sha256_count": 128,
+      "sha256_array": "1f88d415858fefbbed800f5e150c16e4d715e71a4f022c9eef4bc02fda4040d6",
+      "operator_matrices_identical": false
+    },
+    {
+      "regime": "interpolation",
+      "split": "val_x",
+      "response_operators": [
+        "interp_M16_A",
+        "interp_M24_B"
+      ],
+      "observations": 128,
+      "unique_input_spectra": 64,
+      "spectra_identical_for_two_operators": true,
+      "unique_spectra_sha256_count": 64,
+      "sha256_array": "78e3f3a8e9d95695081eda5af6d82444dcaa097b1f42016f7a352a48d7387d80",
+      "operator_matrices_identical": false
+    },
+    {
+      "regime": "moderate_M_extrapolation",
+      "split": "test_x",
+      "response_operators": [
+        "moderate_M8",
+        "moderate_M40"
+      ],
+      "observations": 256,
+      "unique_input_spectra": 128,
+      "spectra_identical_for_two_operators": true,
+      "unique_spectra_sha256_count": 128,
+      "sha256_array": "3aaa9ff921520c473cfb43c4c9bf2152f60b88dddbc9723f665294e214f9a271",
+      "operator_matrices_identical": false
+    },
+    {
+      "regime": "moderate_M_extrapolation",
+      "split": "val_x",
+      "response_operators": [
+        "moderate_M8",
+        "moderate_M40"
+      ],
+      "observations": 128,
+      "unique_input_spectra": 64,
+      "spectra_identical_for_two_operators": true,
+      "unique_spectra_sha256_count": 64,
+      "sha256_array": "24fa81fb969ed0d326745749fa81d98cf16cd7f649939f8b7951f8babe4113e2",
+      "operator_matrices_identical": false
+    },
+    {
+      "regime": "severe_structural",
+      "split": "test_x",
+      "response_operators": [
+        "struct_M16",
+        "struct_M32"
+      ],
+      "observations": 256,
+      "unique_input_spectra": 128,
+      "spectra_identical_for_two_operators": true,
+      "unique_spectra_sha256_count": 128,
+      "sha256_array": "e83a7f7283a074769fe1ce97fd5d0a2d3ca9eb0115e1f08c16041becb459cdc6",
+      "operator_matrices_identical": false
+    },
+    {
+      "regime": "severe_structural",
+      "split": "val_x",
+      "response_operators": [
+        "struct_M16",
+        "struct_M32"
+      ],
+      "observations": 128,
+      "unique_input_spectra": 64,
+      "spectra_identical_for_two_operators": true,
+      "unique_spectra_sha256_count": 64,
+      "sha256_array": "9a7ece09be1a29dca1e57cdb6d37c18f8702e858a866ce6e63df19caf5748315",
+      "operator_matrices_identical": false
+    }
+  ],
+  "no_exact_val_test_spectrum_overlap_within_regime": true,
+  "important_scope": "Exact equality audit only; near-duplicate shapes and training/test leakage not excluded",
+  "statistical_unit": "128 unique spectra per regime; two repeated-operator observations for each"
+}

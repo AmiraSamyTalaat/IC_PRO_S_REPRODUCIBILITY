@@ -1,0 +1,29 @@
+{
+  "status": "GPU_TRAINING_COMPLETE",
+  "n_model_fits": 9,
+  "seeds": [
+    3,
+    7,
+    11
+  ],
+  "arms": [
+    "full",
+    "no_fisher",
+    "anchor_grad_only"
+  ],
+  "parameter_count_each": 291620,
+  "data": "V7_SOURCE_DEFINED_REPLAY; NOT original V7 raw tensors",
+  "trained_from_scratch": true,
+  "test_means": {
+    "anchor_grad_only": 0.37316158324473586,
+    "full": 0.35854000580406536,
+    "no_fisher": 0.3619940212196929
+  },
+  "test_seed_sd": {
+    "anchor_grad_only": 0.0024849747895843767,
+    "full": 0.0007475542196611228,
+    "no_fisher": 0.000517120629317162
+  },
+  "limitations": "3 training seeds; no universal generalization claim",
+  "GPU": "Tesla T4"
+}

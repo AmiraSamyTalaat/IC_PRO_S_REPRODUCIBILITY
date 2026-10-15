@@ -1,0 +1,16 @@
+regime,seed,rel_l2
+interpolation,3.0,0.3520008571649669
+interpolation,7.0,0.35053950861038174
+interpolation,11.0,0.3604562780092237
+interpolation,19.0,0.35897214988654014
+interpolation,23.0,0.35088885220466176
+moderate_M_extrapolation,3.0,0.4294392826996045
+moderate_M_extrapolation,7.0,0.4243691004230641
+moderate_M_extrapolation,11.0,0.4092775305034593
+moderate_M_extrapolation,19.0,0.42398056913225446
+moderate_M_extrapolation,23.0,0.4273130102810683
+severe_structural,3.0,0.38356256028055213
+severe_structural,7.0,0.3856290372496005
+severe_structural,11.0,0.39287602655531373
+severe_structural,19.0,0.3966950769245159
+severe_structural,23.0,0.3866198395844549

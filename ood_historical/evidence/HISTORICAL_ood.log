@@ -1,0 +1,72 @@
+{
+  "id_n": 800,
+  "ood_n": 800,
+  "ood_types": [
+    "response",
+    "dropout",
+    "prior",
+    "noise"
+  ],
+  "metrics": [
+    {
+      "score": "nearest_manifold",
+      "AUROC": 0.9681890625,
+      "AUPRC": 0.9715369212280033,
+      "FPR95": 0.1825
+    },
+    {
+      "score": "knn_density",
+      "AUROC": 0.9470125,
+      "AUPRC": 0.9542372975634393,
+      "FPR95": 0.30375
+    },
+    {
+      "score": "mahalanobis",
+      "AUROC": 0.8688234375,
+      "AUPRC": 0.8965387977832515,
+      "FPR95": 0.65
+    },
+    {
+      "score": "isolation_forest",
+      "AUROC": 0.8355124999999999,
+      "AUPRC": 0.8652515973925328,
+      "FPR95": 0.69125
+    },
+    {
+      "score": "forward_residual",
+      "AUROC": 0.8067171874999999,
+      "AUPRC": 0.807705820633862,
+      "FPR95": 0.54625
+    }
+  ],
+  "per_type_AUROC": {
+    "response": {
+      "nearest_manifold": 0.8845437500000001,
+      "knn_density": 0.8111062499999999,
+      "mahalanobis": 0.61655625,
+      "isolation_forest": 0.5828,
+      "forward_residual": 0.7405625
+    },
+    "dropout": {
+      "nearest_manifold": 1.0,
+      "knn_density": 1.0,
+      "mahalanobis": 1.0,
+      "isolation_forest": 0.9999875,
+      "forward_residual": 0.993275
+    },
+    "prior": {
+      "nearest_manifold": 0.9900875,
+      "knn_density": 0.98223125,
+      "mahalanobis": 0.8928687500000001,
+      "isolation_forest": 0.8477499999999999,
+      "forward_residual": 0.8782687499999999
+    },
+    "noise": {
+      "nearest_manifold": 0.9981249999999999,
+      "knn_density": 0.9947125000000001,
+      "mahalanobis": 0.9658687499999999,
+      "isolation_forest": 0.9115125000000001,
+      "forward_residual": 0.6147625000000001
+    }
+  }
+}

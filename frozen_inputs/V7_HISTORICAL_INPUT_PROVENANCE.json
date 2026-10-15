@@ -1,0 +1,86 @@
+{
+  "historical_raw_inputs_status": "NOT_SERIALIZED_IN_ORIGINAL_V7_RUN",
+  "bit_for_bit_historical_raw_inputs_recoverable": false,
+  "reason": "The preserved V7 source and documented seeds regenerate a valid source-defined evaluation set, but current replay does not reproduce the historical Tikhonov anchors. Therefore these tensors must not be represented as the original raw historical tensors.",
+  "historical_tikhonov": {
+    "test": 0.49647483229637146,
+    "ood": 0.5458183288574219
+  },
+  "source_defined_tikhonov": {
+    "test": 0.5078831911087036,
+    "ood": 0.5614391565322876,
+    "abs_diff_test": 0.011408358812332153,
+    "abs_diff_ood": 0.015620827674865723
+  },
+  "historical_checkpoint_metrics": {
+    "3": [
+      0.3581865727901459,
+      0.41523608565330505
+    ],
+    "7": [
+      0.3517942726612091,
+      0.4123974144458771
+    ],
+    "11": [
+      0.35577574372291565,
+      0.4137205183506012
+    ],
+    "19": [
+      0.3586612045764923,
+      0.4179861843585968
+    ],
+    "23": [
+      0.35931143164634705,
+      0.4173990786075592
+    ]
+  },
+  "source_defined_checkpoint_replay": [
+    {
+      "seed": 3,
+      "source_defined_test_replay": 0.36445069313049316,
+      "historical_test_reported": 0.3581865727901459,
+      "source_defined_ood_replay": 0.4214414954185486,
+      "historical_ood_reported": 0.41523608565330505,
+      "abs_diff_test": 0.00626412034034729,
+      "abs_diff_ood": 0.00620540976524353
+    },
+    {
+      "seed": 7,
+      "source_defined_test_replay": 0.3587665557861328,
+      "historical_test_reported": 0.3517942726612091,
+      "source_defined_ood_replay": 0.41979503631591797,
+      "historical_ood_reported": 0.4123974144458771,
+      "abs_diff_test": 0.006972283124923706,
+      "abs_diff_ood": 0.0073976218700408936
+    },
+    {
+      "seed": 11,
+      "source_defined_test_replay": 0.36251991987228394,
+      "historical_test_reported": 0.35577574372291565,
+      "source_defined_ood_replay": 0.42551398277282715,
+      "historical_ood_reported": 0.4137205183506012,
+      "abs_diff_test": 0.006744176149368286,
+      "abs_diff_ood": 0.011793464422225952
+    },
+    {
+      "seed": 19,
+      "source_defined_test_replay": 0.3643932342529297,
+      "historical_test_reported": 0.3586612045764923,
+      "source_defined_ood_replay": 0.42763957381248474,
+      "historical_ood_reported": 0.4179861843585968,
+      "abs_diff_test": 0.005732029676437378,
+      "abs_diff_ood": 0.00965338945388794
+    },
+    {
+      "seed": 23,
+      "source_defined_test_replay": 0.3663463592529297,
+      "historical_test_reported": 0.35931143164634705,
+      "source_defined_ood_replay": 0.42745694518089294,
+      "historical_ood_reported": 0.4173990786075592,
+      "abs_diff_test": 0.007034927606582642,
+      "abs_diff_ood": 0.01005786657333374
+    }
+  ],
+  "max_neural_replay_abs_difference": 0.011793464422225952,
+  "canonical_reviewer_evidence": "Use the preserved canonical V7 checkpoints plus the frozen historical result tables/reports for the originally reported V7 numbers. Use the newly frozen source-defined tensors for future modification experiments and sensitivity checks, not as a retroactive claim of historical raw-input identity."
+}

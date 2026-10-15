@@ -1,0 +1,22 @@
+regime,method,n_spectra,n_measurements,mean_rel_l2
+interpolation,IC-PRO-S,128,256,0.35053950861038174
+interpolation,MGDUN-style,128,256,0.4273330723954131
+interpolation,NNLS-TV,128,256,0.3842893257169635
+interpolation,PiGDM controlled,128,256,0.9271264451963361
+interpolation,PnP tuned,128,256,0.37717058925773017
+interpolation,ReSpecNN per-device,128,256,0.3810659741575364
+interpolation,Tikhonov,128,256,0.46181606187019497
+moderate_M_extrapolation,IC-PRO-S,128,256,0.4243691004230641
+moderate_M_extrapolation,MGDUN-style,128,256,0.46890985968639143
+moderate_M_extrapolation,NNLS-TV,128,256,0.39709589634730946
+moderate_M_extrapolation,PiGDM controlled,128,256,0.9195399920572527
+moderate_M_extrapolation,PnP tuned,128,256,0.4370097125065513
+moderate_M_extrapolation,ReSpecNN per-device,128,256,0.404748597087746
+moderate_M_extrapolation,Tikhonov,128,256,0.5260773532500025
+severe_structural,IC-PRO-S,128,256,0.3856290372496005
+severe_structural,MGDUN-style,128,256,0.4546652269200422
+severe_structural,NNLS-TV,128,256,0.4124064794596052
+severe_structural,PiGDM controlled,128,256,0.9244411285617389
+severe_structural,PnP tuned,128,256,0.3899440054810839
+severe_structural,ReSpecNN per-device,128,256,0.413717456311133
+severe_structural,Tikhonov,128,256,0.47504326680791564

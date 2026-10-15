@@ -1,0 +1,22 @@
+regime,method,mean_rel_l2,std_rel_l2,fraction_better_than_tikhonov_pct,target_retraining,deployment
+interpolation,Tikhonov,0.46181606187019497,0.2946329755953597,,No,analytic per response
+interpolation,NNLS-TV,0.3842893257169635,0.3055017104666771,88.671875,No,120-iteration optimization
+interpolation,IC-PRO-S,0.35053950861038174,0.2796335036408924,88.28125,No,one shared deterministic family model
+interpolation,PnP tuned,0.37717058925773017,0.27368240821636025,82.421875,No,shared denoiser + 12 iterative steps
+interpolation,ReSpecNN per-device,0.3810659741575364,0.3044866535311777,77.34375,Yes: per target response,separate target-response neural model
+interpolation,PiGDM controlled,0.9271264451963361,0.695799279790275,2.34375,No,shared diffusion prior + 50 guided reverse steps
+interpolation,MGDUN-style,0.4273330723954132,0.2958472615875266,74.21875,No,shared six-stage unfolding model
+moderate_M_extrapolation,Tikhonov,0.5260773532500025,0.28529266343202836,,No,analytic per response
+moderate_M_extrapolation,NNLS-TV,0.39709589634730946,0.3312340859127361,85.9375,No,120-iteration optimization
+moderate_M_extrapolation,IC-PRO-S,0.4243691004230641,0.3315082536605302,78.90625,No,one shared deterministic family model
+moderate_M_extrapolation,PnP tuned,0.4370097125065513,0.2879231135399252,81.25,No,shared denoiser + 12 iterative steps
+moderate_M_extrapolation,ReSpecNN per-device,0.404748597087746,0.33875860882757164,81.640625,Yes: per target response,separate target-response neural model
+moderate_M_extrapolation,PiGDM controlled,0.9195399920572527,0.7472355556362306,25.390625,No,shared diffusion prior + 50 guided reverse steps
+moderate_M_extrapolation,MGDUN-style,0.46890985968639143,0.3291504164648357,70.703125,No,shared six-stage unfolding model
+severe_structural,Tikhonov,0.47504326680791564,0.329517021330639,,No,analytic per response
+severe_structural,NNLS-TV,0.4124064794596052,0.3352864716189594,77.734375,No,120-iteration optimization
+severe_structural,IC-PRO-S,0.3856290372496005,0.31033213366483053,82.421875,No,one shared deterministic family model
+severe_structural,PnP tuned,0.3899440054810839,0.29769382607128,78.515625,No,shared denoiser + 12 iterative steps
+severe_structural,ReSpecNN per-device,0.413717456311133,0.34782787516534436,73.4375,Yes: per target response,separate target-response neural model
+severe_structural,PiGDM controlled,0.9244411285617389,0.7130544172618557,3.125,No,shared diffusion prior + 50 guided reverse steps
+severe_structural,MGDUN-style,0.4546652269200422,0.3197670765840369,67.96875,No,shared six-stage unfolding model

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "quick_mode": false,
+  "device": "cuda",
+  "seeds": [
+    3,
+    7,
+    11,
+    19,
+    23
+  ],
+  "epsilon_levels": [
+    0.0,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "operators": 6,
+  "methods": [
+    "IC-PRO-S fixed eta=0.5",
+    "IC-PRO-S full eta=1",
+    "IC-PRO-S learned eta",
+    "IC-PRO-S proposal only",
+    "Tikhonov"
+  ],
+  "training_or_finetuning": false,
+  "base_benchmark": "A12_V1"
+}

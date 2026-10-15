@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "quick_mode": false,
+  "device": "cuda",
+  "n_experimental_targets": 25,
+  "M_settings": [
+    32,
+    101
+  ],
+  "methods": [
+    "IC-PRO-S response-only",
+    "IC-PRO-S zero-shot 5-seed ensemble",
+    "NNLS-TV",
+    "PnP tuned",
+    "ReSpecNN per-device",
+    "Tikhonov"
+  ],
+  "raw_real_photocurrent_used": false,
+  "real_response_matrix_used": true,
+  "experimental_ground_truth_spectra_used_for_evaluation_only": true,
+  "real_labels_used_for_training_or_selection": false
+}

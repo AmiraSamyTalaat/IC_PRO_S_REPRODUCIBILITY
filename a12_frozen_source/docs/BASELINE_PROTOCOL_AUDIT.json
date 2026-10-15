@@ -1,0 +1,58 @@
+{
+  "benchmark_version": "A12_V1",
+  "manuscript_status": "FROZEN_UNTIL_FULL_RUN_COMPLETE",
+  "principle": "All reported A12 methods are evaluated on identical fixed target spectra/operators; target Test labels never tune any method.",
+  "methods": {
+    "IC-PRO-S": {
+      "weights": "five recovered V7 checkpoints; seed7 primary paired table, all five for stability",
+      "target_operator_training": "none",
+      "selection": "already frozen V7 validation"
+    },
+    "Tikhonov": {
+      "training": "none",
+      "lambda": 0.001
+    },
+    "NNLS-TV": {
+      "target_operator_training": "none",
+      "selection": "lambda from original V7 validation bank",
+      "iterations": 120
+    },
+    "PnP tuned": {
+      "target_operator_training": "none",
+      "denoiser_training": "shared synthetic prior, 700 steps",
+      "solver": "12 steps, eta=0.65, ridge=1e-3"
+    },
+    "MGDUN-style": {
+      "target_operator_training": "none",
+      "training": "shared original V7 train family",
+      "seeds": [
+        3,
+        7,
+        11
+      ],
+      "stages": 6
+    },
+    "ReSpecNN per-device": {
+      "target_operator_training": "yes, synthetic target-response only",
+      "steps_per_target": 1200,
+      "validation": "synthetic validation generated under that calibrated target response",
+      "real_or_test_labels": "none"
+    },
+    "PiGDM controlled": {
+      "target_operator_training": "none",
+      "prior_training": "sensor-independent synthetic spectral prior",
+      "updates": 3000,
+      "T": 1000,
+      "K": 50,
+      "gamma": 0.05,
+      "approx_params": 5255866
+    }
+  },
+  "primary_outputs": [
+    "EXTENDED_TABLE6.csv",
+    "EXTENDED_TABLE6_BY_OPERATOR.csv",
+    "PAIRWISE_STATS.csv",
+    "ICPRO_5SEED_EXTRAPOLATION.csv"
+  ],
+  "quick_mode_policy": "Quick mode is code-integrity only and cannot be used for manuscript numbers."
+}

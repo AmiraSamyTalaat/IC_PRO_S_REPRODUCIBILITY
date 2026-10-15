@@ -1,0 +1,4 @@
+regime,icpros,tikhonov,gain_pct,fraction_better_pct
+interpolation,0.3310,0.4755,30.38,91.2
+moderate_extrapolation,0.3498,0.4895,28.54,91.0
+severe_structural_extrapolation,0.3494,0.4703,25.72,88.5

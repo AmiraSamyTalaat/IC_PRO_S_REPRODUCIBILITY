@@ -1,0 +1,7 @@
+{
+  "version": "A13B_SUPPORT_V1",
+  "source_data_sha256": "87a61c13e343cfb802642c0b029fb0b05b56465d8de6489cd7ddfba70b287ab1",
+  "base_support_source_sha256": "5f999edb39cdcb8b7567a127daa330421c46204ce5b95818bb913ba102b53e0c",
+  "runner_sha256": "3f171121617e2f4be128b704d16c083ec8a4dc1a38731cff01f70ca02c32551f",
+  "scientific_protocol": "Measured physical response + experimental target spectra; controlled forward-projected measurements; no raw real photocurrent claim."
+}

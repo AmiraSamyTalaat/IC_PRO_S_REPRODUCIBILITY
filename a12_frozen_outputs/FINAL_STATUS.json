@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "quick_mode": false,
+  "device": "cuda",
+  "methods": [
+    "IC-PRO-S",
+    "MGDUN-style",
+    "NNLS-TV",
+    "PiGDM controlled",
+    "PnP tuned",
+    "ReSpecNN per-device",
+    "Tikhonov"
+  ],
+  "missing": [],
+  "primary_rows": 5376,
+  "all_error_rows": 9984
+}

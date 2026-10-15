@@ -1,0 +1,11 @@
+# Only transient/secret material is ignored. Published checkpoints and .pt tensors MUST be tracked.
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.env.*
+*.token
+kaggle.json
+access_token
+.DS_Store
+# DO NOT ignore checkpoints/ or *.pt: the frozen model and evaluation tensor files are required.

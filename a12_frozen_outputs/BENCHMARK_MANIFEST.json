@@ -1,0 +1,74 @@
+{
+  "version": "A12_V1",
+  "N": 256,
+  "noise": 0.01,
+  "rows": [
+    {
+      "regime": "interpolation",
+      "operator": "interp_M16_A",
+      "M": 16,
+      "N": 256,
+      "test_n": 128,
+      "val_n": 64
+    },
+    {
+      "regime": "interpolation",
+      "operator": "interp_M24_B",
+      "M": 24,
+      "N": 256,
+      "test_n": 128,
+      "val_n": 64
+    },
+    {
+      "regime": "moderate_M_extrapolation",
+      "operator": "moderate_M8",
+      "M": 8,
+      "N": 256,
+      "test_n": 128,
+      "val_n": 64
+    },
+    {
+      "regime": "moderate_M_extrapolation",
+      "operator": "moderate_M40",
+      "M": 40,
+      "N": 256,
+      "test_n": 128,
+      "val_n": 64
+    },
+    {
+      "regime": "severe_structural",
+      "operator": "struct_M16",
+      "M": 16,
+      "N": 256,
+      "test_n": 128,
+      "val_n": 64
+    },
+    {
+      "regime": "severe_structural",
+      "operator": "struct_M32",
+      "M": 32,
+      "N": 256,
+      "test_n": 128,
+      "val_n": 64
+    }
+  ],
+  "content_sha256": "556123c3d5af89281de2531317f01c690e4a4192f33b1ce7de2d9507ecee3f2e",
+  "test_spectrum_seeds": [
+    41001,
+    41002,
+    41003
+  ],
+  "validation_spectrum_seeds": [
+    40001,
+    40002,
+    40003
+  ],
+  "operator_seeds": [
+    9101,
+    9102,
+    9201,
+    9202,
+    9301,
+    9302
+  ]
+}
